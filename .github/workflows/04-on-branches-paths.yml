@@ -5,7 +5,7 @@ on:
     branches: 
       - main
       - 'release/**'
-   paths-ignore: 
+    paths-ignore: 
      - 'sample-app/**'
      - '**/*.js'
 
@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: This only runs for the branches/paths above 
-       run: echo "Relevant change detected on branch ${{ github.ref_name }}"
+        run: echo "Relevant change detected on branch ${{ github.ref_name }}"
