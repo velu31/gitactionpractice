@@ -1,0 +1,17 @@
+name: on pull
+
+on: 
+  push: 
+    branches-ignore:
+      - main
+      - 'release/**'
+    paths-ignore: 
+      - 'sample-app/**'
+      - '**.js'
+
+jobs:
+  filtered-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: This only runs for the branches/paths above 
+       run: echo "Relevant change detected on branch ${{ github.ref_name }}"
