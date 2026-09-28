@@ -5,9 +5,9 @@ on:
     branches: 
       - main
       - 'release/**'
-    paths-ignore: 
-      - 'sample-app/**'
-      - '**.js'
+   paths-ignore: 
+     - 'sample-app/**'
+     - '**/*.js'
 
 jobs:
   filtered-build:
