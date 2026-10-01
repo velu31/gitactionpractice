@@ -10,3 +10,5 @@ jobs:
     steps:
       - name: Nightly housekeeping
         run: echo "Running scheduled job at $(date -u)"
+        run: echo "Running scheduled job at $(date -u)"
+
